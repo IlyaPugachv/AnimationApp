@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6145072ACDE7DD008E22F5 /* book.json in Resources */ = {isa = PBXBuildFile; fileRef = BC6145062ACDE7DD008E22F5 /* book.json */; };
+		BC6145092ACDE84C008E22F5 /* mountain.json in Resources */ = {isa = PBXBuildFile; fileRef = BC6145082ACDE84C008E22F5 /* mountain.json */; };
+		BC61450B2ACDE88C008E22F5 /* display.json in Resources */ = {isa = PBXBuildFile; fileRef = BC61450A2ACDE88C008E22F5 /* display.json */; };
+		BC61450D2ACDE8B2008E22F5 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = BC61450C2ACDE8B2008E22F5 /* home.json */; };
+		BC61450F2ACDE8D8008E22F5 /* eye.json in Resources */ = {isa = PBXBuildFile; fileRef = BC61450E2ACDE8D8008E22F5 /* eye.json */; };
 		BCA1742D2ACD474B00E5D0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA1742C2ACD474B00E5D0CE /* AppDelegate.swift */; };
 		BCA1742F2ACD474B00E5D0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA1742E2ACD474B00E5D0CE /* SceneDelegate.swift */; };
 		BCA174342ACD474B00E5D0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA174322ACD474B00E5D0CE /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		1EEDACD94A4464B755311020 /* Pods_AnimationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9F97B3318F2F70F951C6DD /* Pods-AnimationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationApp.release.xcconfig"; path = "Target Support Files/Pods-AnimationApp/Pods-AnimationApp.release.xcconfig"; sourceTree = "<group>"; };
+		BC6145062ACDE7DD008E22F5 /* book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = book.json; path = ../../../../../../../../../../Downloads/book.json; sourceTree = "<group>"; };
+		BC6145082ACDE84C008E22F5 /* mountain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mountain.json; path = ../../../../../../../../../../Downloads/mountain.json; sourceTree = "<group>"; };
+		BC61450A2ACDE88C008E22F5 /* display.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = display.json; path = ../../../../../../../../../../Downloads/display.json; sourceTree = "<group>"; };
+		BC61450C2ACDE8B2008E22F5 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = home.json; path = ../../../../../../../../../../Downloads/home.json; sourceTree = "<group>"; };
+		BC61450E2ACDE8D8008E22F5 /* eye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = eye.json; path = ../../../../../../../../../../Downloads/eye.json; sourceTree = "<group>"; };
 		BCA174292ACD474B00E5D0CE /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA1742C2ACD474B00E5D0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA1742E2ACD474B00E5D0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +132,11 @@
 		BCA174502ACD58B500E5D0CE /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				BC61450E2ACDE8D8008E22F5 /* eye.json */,
+				BC61450C2ACDE8B2008E22F5 /* home.json */,
+				BC61450A2ACDE88C008E22F5 /* display.json */,
+				BC6145082ACDE84C008E22F5 /* mountain.json */,
+				BC6145062ACDE7DD008E22F5 /* book.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -210,8 +225,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC61450B2ACDE88C008E22F5 /* display.json in Resources */,
+				BC6145092ACDE84C008E22F5 /* mountain.json in Resources */,
+				BC6145072ACDE7DD008E22F5 /* book.json in Resources */,
+				BC61450F2ACDE8D8008E22F5 /* eye.json in Resources */,
 				BCA174392ACD474C00E5D0CE /* LaunchScreen.storyboard in Resources */,
 				BCA174362ACD474C00E5D0CE /* Assets.xcassets in Resources */,
+				BC61450D2ACDE8B2008E22F5 /* home.json in Resources */,
 				BCA174342ACD474B00E5D0CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
