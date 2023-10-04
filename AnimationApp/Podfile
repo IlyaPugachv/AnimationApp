@@ -7,6 +7,5 @@ target 'AnimationApp' do
 
   # Pods for AnimationApp
   pod 'lottie-ios'
-  pod 'NVActivityIndicatorView'
-
+  
 end

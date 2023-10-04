@@ -1,4 +1,5 @@
 import UIKit
+import Lottie
 
 final class AnimationVC: UIViewController {
 
