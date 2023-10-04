@@ -13,11 +13,17 @@ final class AnimationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCoreAnimationVeiw()
+        lottieAnimationViewSetup()
     }
 
     @IBAction func coreAnimationBtnAction(_ sender: UIButton) {
         sender.pulsate()
+        setupCoreAnimationVeiw()
+    }
+    @IBAction func lottieAnimationBtnAction(_ sender: UIButton) {
+        lottieAnimationView.play { completed in
+            print("End lottieAnimationView")
+        }
     }
     
     private func setupCoreAnimationVeiw() {
@@ -27,9 +33,9 @@ final class AnimationVC: UIViewController {
     }
     
     private func lottieAnimationViewSetup() {
-        lottieAnimationView = .init(name: "heart")
+        lottieAnimationView = .init(name: "eye")
         lottieAnimationView.backgroundColor = .lightGray
-        lottieAnimationView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        lottieAnimationView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         lottieAnimationView.contentMode = .scaleAspectFit
         lottieAnimationView.loopMode = .loop
         lottieAnimationView.animationSpeed = 0.5
