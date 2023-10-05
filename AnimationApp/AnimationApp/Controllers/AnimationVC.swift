@@ -1,8 +1,12 @@
 import UIKit
+
+
 import Lottie
 
 final class AnimationVC: UIViewController {
-
+    
+//    private var animations = Animation()
+    
     @IBOutlet private weak var coreAnimationView: UIView!
     @IBOutlet private weak var stackView: UIStackView!
     
@@ -14,26 +18,33 @@ final class AnimationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lottieAnimationViewSetup()
+        
     }
-
+    
     @IBAction func coreAnimationBtnAction(_ sender: UIButton) {
         sender.pulsate()
         setupCoreAnimationVeiw()
     }
+    
     @IBAction func lottieAnimationBtnAction(_ sender: UIButton) {
-        lottieAnimationView.play { completed in
+        lottieAnimationView.play { _ in
             print("End lottieAnimationView")
         }
     }
     
+    
     private func setupCoreAnimationVeiw() {
-        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse, .repeat]) { [weak self] in
+        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse]) { [weak self] in
             self?.coreAnimationView.frame.origin.x += 40
         }
     }
     
     private func lottieAnimationViewSetup() {
-        lottieAnimationView = .init(name: "eye")
+        
+       
+        lottieAnimationView = .init(name: "home")
+//        lottieAnimationView.view = animations.animations.randomElement()
+        
         lottieAnimationView.backgroundColor = .lightGray
         lottieAnimationView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         lottieAnimationView.contentMode = .scaleAspectFit
