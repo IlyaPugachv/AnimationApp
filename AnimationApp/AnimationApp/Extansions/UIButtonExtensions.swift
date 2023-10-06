@@ -10,8 +10,6 @@ extension UIButton {
         pulsate.autoreverses = true
         pulsate.initialVelocity = 0.5
         pulsate.damping = 1
-        
         layer.add(pulsate, forKey: nil)
-
     }
 }
